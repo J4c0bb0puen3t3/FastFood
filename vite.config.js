@@ -8,26 +8,29 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg"],
+      includeAssets: [
+        "icons/icon-192.png",
+        "icons/icon-512.png"
+      ],
       manifest: {
         name: "FastFood POS",
         short_name: "FastFood",
-        theme_color: "#18ccdc",
-        background_color: "#ffffff",
-        display: "standalone",
         start_url: "/FastFood/",
         scope: "/FastFood/",
+        display: "standalone",
+        background_color: "#ffffff",
+        theme_color: "#18ccdc",
         icons: [
           {
             src: "icons/icon-192.png",
-            sizes: "192x192",
+            sizes: "50x50",
             type: "image/png",
           },
           {
-            src: "icons/icon-192.png",
-            sizes: "512x512",
+            src: "icons/icon-512.png",
+            sizes: "50x50",
             type: "image/png",
-          },
+          }
         ],
       },
     }),
