@@ -6,15 +6,23 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/FastFood/icons/icon-192.png" />
 
-    <!-- PWA -->
-    <link rel="manifest" href="/FastFood/manifest.webmanifest" />
-    <meta name="theme-color" content="#18ccdc" />
-
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#18ccdc" />
+    <meta name="description" content="Sistema de punto de venta para FastFood" />
+    
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FastFood POS" />
+    <link rel="apple-touch-icon" href="/FastFood/icons/apple-touch-icon.png" />
+
     <title>FastFood POS</title>
   </head>
   <body>
     <div id="root"></div>
-    <!-- ⚠️ Vite inyecta el JS automáticamente en build -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
