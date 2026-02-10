@@ -15,7 +15,7 @@ export default defineConfig({
         theme_color: "#18ccdc",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: "/",
+        start_url: "/FastFood/",
         icons: [
           {
             src: "icons/icon-192.png",
