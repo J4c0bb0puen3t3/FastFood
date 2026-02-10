@@ -1,0 +1,60 @@
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Botón base */
+.sidebar-nav__button {
+  width: 7rem;
+  height: 4.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+
+  background-color: transparent;
+  color: #ffffff;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.sidebar-nav__button:hover {
+  background-color: #18ccdc;
+  color: #0f172a;
+}
+
+/* Estado activo */
+.sidebar-nav__button--active {
+  background-color: #18ccdc;
+  color: #ffffff;
+}
+
+.sidebar-nav__button:active {
+  transform: scale(0.97);
+}
+
+/* Icono */
+.sidebar-nav__icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Texto */
+.sidebar-nav__label {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+

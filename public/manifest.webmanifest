@@ -1,0 +1,22 @@
+{
+  "name": "FastFood POS",
+  "short_name": "FastFood",
+  "start_url": "/FastFood/",
+  "scope": "/FastFood/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#18ccdc",
+  "description": "Point of Sale FastFood App",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

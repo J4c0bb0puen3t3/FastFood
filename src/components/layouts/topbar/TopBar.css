@@ -1,0 +1,252 @@
+/* Contenedor principal del TopBar */
+.topbar {
+  height: 4rem; /* 64px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: white;
+  /* border-bottom: 1px solid #e5e7eb; */
+}
+
+/* Botón de menú móvil */
+.topbar-menu-btn {
+  display: none; /* Oculto por defecto */
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.topbar-menu-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Wrapper del buscador */
+.topbar-search-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 42rem;
+}
+
+.topbar-search {
+  position: relative;
+  width: 100%;
+}
+
+/* Icono de búsqueda */
+.topbar-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+/* Input de búsqueda */
+.topbar-search-input {
+  width: 100%;
+  padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #111827;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.topbar-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.topbar-search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Botón de limpiar búsqueda */
+.topbar-search-clear {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.topbar-search-clear:hover {
+  color: #4b5563;
+}
+
+.topbar-search-clear .material-symbols-outlined {
+  font-size: 1.125rem;
+}
+
+/* Acciones de la derecha */
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* Contenedor de notificaciones */
+.topbar-notifications {
+  position: relative;
+}
+
+/* Botón de notificaciones */
+.topbar-notification-btn {
+  position: relative;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.topbar-notification-btn:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.topbar-notification-btn .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+/* Badge de notificaciones */
+.topbar-notification-badge {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropdown de notificaciones */
+.topbar-notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  width: 20rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  z-index: 50;
+}
+
+.topbar-notification-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-notification-header h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.topbar-notification-body {
+  padding: 1rem;
+}
+
+.topbar-notification-body p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .topbar {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  .topbar-menu-btn {
+    color: #94a3b8;
+  }
+
+  .topbar-menu-btn:hover {
+    background-color: #334155;
+  }
+
+  .topbar-search-input {
+    background-color: #334155;
+    border-color: #475569;
+    color: white;
+  }
+
+  .topbar-search-input::placeholder {
+    color: #64748b;
+  }
+
+  .topbar-notification-btn {
+    color: #94a3b8;
+  }
+
+  .topbar-notification-btn:hover {
+    background-color: #334155;
+    color: #cbd5e1;
+  }
+
+  .topbar-notification-dropdown {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+
+  .topbar-notification-header {
+    border-color: #334155;
+  }
+
+  .topbar-notification-header h3 {
+    color: white;
+  }
+
+  .topbar-notification-body p {
+    color: #94a3b8;
+  }
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .topbar {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .topbar-menu-btn {
+    display: flex; /* Mostrar en móviles */
+  }
+}
