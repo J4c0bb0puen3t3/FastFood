@@ -16,6 +16,7 @@ export default defineConfig({
         background_color: "#ffffff",
         display: "standalone",
         start_url: "/FastFood/",
+        scope: "/FastFood/",
         icons: [
           {
             src: "icons/icon-192.png",
