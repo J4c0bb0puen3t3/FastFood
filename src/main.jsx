@@ -4,6 +4,7 @@ import './index.css'
 import App from './app/App'
 import { HashRouter } from "react-router-dom";
 import { registerSW } from "virtual:pwa-register"; // 👉 registro del Service Worker (PWA)
+import { BrowserRouter } from "react-router-dom";
 
 registerSW({
   onNeedRefresh() {
@@ -15,7 +16,7 @@ registerSW({
 });
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
+<BrowserRouter basename="/FastFood">
   <App />
-</HashRouter>
+</BrowserRouter>
 )
