@@ -22,12 +22,12 @@ export default defineConfig({
         theme_color: "#18ccdc",
         icons: [
           {
-            src: "icons/icon-192.png",
+            src: "/FastFood/icons/icon-192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "icons/icon-512.png",
+            src: "/FastFood/icons/icon-512.png",
             sizes: "512x512",
             type: "image/png",
           }
