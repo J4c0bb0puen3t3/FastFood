@@ -16,8 +16,8 @@ registerSW({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/FastFood/">
+    
       <App />
-    </BrowserRouter>
+    
   </StrictMode>
 )

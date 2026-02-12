@@ -22,4 +22,8 @@ export const router = createBrowserRouter([
       { path: "/settings", element: <div>Settings</div> },
     ],
   }
-]);
+],
+  {
+    basename: "/FastFood/", // 👈 ESTO ES LO QUE FALTABA
+  }
+);
