@@ -22,9 +22,9 @@ export default function DashboardLayout() {
       </div>
 
       {/* Columna 3: Panel derecho fijo */}
-          <aside className="dashboard-right-panel">
-            {/* <AsidePanel /> */}
-          </aside>
+          {/* /<aside className="dashboard-right-panel">
+            <AsidePanel />
+          </aside> */}
           
     </div>
   );
