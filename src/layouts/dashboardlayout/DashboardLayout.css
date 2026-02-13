@@ -89,11 +89,12 @@
   }
 
   .dashboard-right-panel {
-    display: block;
+    /* display: block;
     width: 23.8rem;
     background-color: white;
     border-left: 1px solid #e5e7eb;
-    overflow-y: auto;
+    overflow-y: auto; */
+    display: none;
   }
 }
 
@@ -108,8 +109,7 @@
   }
 
   .dashboard-sidebar,
-  .dashboard-topbar,
-  .dashboard-right-panel {
+  .dashboard-topbar {
     background-color: #1e293b;
     border-color: #334155;
   }
